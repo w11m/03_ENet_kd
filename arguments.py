@@ -28,8 +28,8 @@ def get_arguments():
     parser.add_argument("--teacher_dir", type=str,
                         default='/media/tan/Disk/graduate_Code/ENet_ncist/camvid360480_saved_ckpt/2020-12-10/2020-12-10_0/model0_ckpt.pth')
     parser.add_argument("--student_model", default='ENet_3enc0_channel0.6')
-    # Mutual KD Setting
 
+    # Mutual KD Setting
     parser.add_argument("--mutual_model_num", type=int, default=2)
     parser.add_argument("--mutual_models", nargs='+', default=['ENet_3enc0_channel0.6', 'ENet'])
     parser.add_argument("--mutualpimode", default='KL')
