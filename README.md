@@ -23,5 +23,17 @@ python main.py [--submode] [--modelname] # Vanilla Setting
                [--kdmethod] [--pimode] [--teacher_model] [--teacher_dir] [--student_model] # KD Setting
                [--mutual_model_num] [--mutual_models] [--mutualpimode] # mutual setting 
 ```
+### Training Vanilla Model
+```
+python main.py -m train --submode 'vanilla'
+```
 
-For help on the optional arguments run: ``python main.py -h``
+### Training KD Model
+```
+python main.py -m train --submode 'kd'
+```
+
+### Training Mutual Model
+```
+python main.py -m train --submode 'mutual'
+```
