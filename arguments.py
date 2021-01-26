@@ -39,7 +39,7 @@ def get_arguments():
 
     # General setting
     parser.add_argument("--batch_size", type=int, default=8)
-    parser.add_argument("--epochs", type=int, default=30)
+    parser.add_argument("--epochs", type=int, default=1)
     # Learning rate updater
     parser.add_argument("--lr_update", choices=['StepLR', 'ReduceLROnPlateau'], default='ReduceLROnPlateau')
 
