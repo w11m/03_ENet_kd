@@ -1,6 +1,6 @@
 from model.net.enet import ENet
 from model.config.enet_config import ENET_MODEL_DICT
-from model.deeplab import *
+
 # from ptflops import get_model_complexity_info
 
 
@@ -15,9 +15,6 @@ class ModelSelector(object):
             r3s = ENET_MODEL_DICT[model_name]['reduce3stage']
             stg3 = ENET_MODEL_DICT[model_name]['stage3']
             model = ENet(num_classes=self.numclass, CHset=cs, reduce2stage=r2s, reduce3stage=r3s, stage3=stg3)
-        elif 'Deeplab' in model_name:
-            model = DeepLab(num_classes=self.numclass, backbone='mobilenet', output_stride=8, sync_bn=False,
-                            freeze_bn=False)
         else:
             raise RuntimeError("Argument model {} is not defined !".format(model_name))
         return model
