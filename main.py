@@ -13,9 +13,9 @@ import torch.nn.functional as F
 from tensorboardX import SummaryWriter
 from data.get_datasets import select_dataset
 from data.get_datasets import load_dataset
-from new_trainer import Trainer
-from new_tester import Tester
-from new_tester import Outside_Tester
+from trainer import Trainer
+from tester import Tester
+from tester import Outside_Tester
 import myutils
 
 if __name__ == '__main__':
