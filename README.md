@@ -10,7 +10,7 @@ The master branch works with **Pytorch 1.7.0**, with **Python 3.5,3.6**.
 
 This implementation has been tested on the CamVid and Cityscapes datasets.
 
-####CamVid Dataset : [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)
+###CamVid Dataset : [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)
 or use the terminal command below.
 ```Shell
 wget https://s3-ap-northeast-1.amazonaws.com/leapmind-public-storage/datasets/camvid.tgz
@@ -51,7 +51,7 @@ The directory structure of this dataset is shown below. In the CamVid dataset, b
          ├─ 0001TP_008910.png
          └─ ... 
 ```
-####Cityscapes Dataset : [Cityscapes](https://www.cityscapes-dataset.com/)
+###Cityscapes Dataset : [Cityscapes](https://www.cityscapes-dataset.com/)
 The directory structure of this dataset is shown below. In the CamVid dataset, both training and annotation data are binary image files.
 ```Shell
     Cityscapes
