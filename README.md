@@ -24,16 +24,19 @@ python main.py [--submode] [--modelname] # Vanilla Setting
                [--mutual_model_num] [--mutual_models] [--mutualpimode] # mutual setting 
 ```
 ### Training Vanilla Model
+Example training script can be find in [``train_camvid_vanilla.sh``](https://github.com/w11m/03_ENet_kd/blob/master/script/train_camvid_vanilla.sh)
 ```
-python main.py -m train --submode 'vanilla'
+python main.py --submode 'vanilla' --modelname <MODEL_NAME>
 ```
 
 ### Training KD Model
+Example training script can be find in [``train_camvid_kd.sh``](https://github.com/w11m/03_ENet_kd/blob/master/script/train_camvid_kd.sh)
 ```
-python main.py -m train --submode 'kd'
+python main.py --submode 'kd' --teacher_model <TMODEL_NAME> --teacher_dir <TMODEL_PATH> --student_model <SMODEL_NAME>
 ```
 
 ### Training Mutual Model
+Example training script can be find in [``train_camvid_mutual.sh``](https://github.com/w11m/03_ENet_kd/blob/master/script/train_camvid_mutual.sh)
 ```
-python main.py -m train --submode 'mutual'
+python main.py --submode 'mutual' --mutual_models <MODEL_NAME><MODEL_NAME>
 ```
