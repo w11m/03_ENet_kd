@@ -120,3 +120,5 @@ python main.py --submode 'mutual' --mutual_models <MODEL_NAME><MODEL_NAME>
 ``submit_cityscapes.py``: For individually test `Citscapes` dataset. 
 
 ``visualize_numpy.py``: For visualize demo. 
+
+try add readme on github
