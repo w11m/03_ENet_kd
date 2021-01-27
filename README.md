@@ -75,8 +75,8 @@ The directory structure of this dataset is shown below. In the CamVid dataset, b
          └─ val
               ├─ <cityfolder>
               └─ <cityfolder> 
+```
 ## Usage
-
 Run [``main.py``](https://github.com/w11m/03_ENet_kd/blob/master/main.py), the main script file used for training and/or testing the model. The following options are supported:
 
 ```
